@@ -1,6 +1,7 @@
 {
   "name": "ecommerce",
   "version": "0.1.0",
+  "author": "Onyekwelu Uzochukwu Felix",
   "private": true,
   "scripts": {
     "dev": "next dev",
