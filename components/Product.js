@@ -4,7 +4,7 @@ import {ProductsContext} from "./ProductsContext";
 export default function Product({_id,name,price,description,picture}) {
   const {setSelectedProducts} = useContext(ProductsContext);
   function addProduct() {
-    setSelectedProducts(prev => [...prev,_id]);
+    setSelectedProducts(prev => Array.isArray(prev)? [...prev,_id] : [prev]);
   }
   return (
     <div className="w-52">
