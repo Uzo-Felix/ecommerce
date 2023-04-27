@@ -1,6 +1,6 @@
 import {initMongoose} from "../../lib/mongoose";
 import Product from "../../modelss/Product";
-import Order from "../../modes/Order";
+import Order from "../../modelss/Order";
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 export default async function handler(req,res) {
