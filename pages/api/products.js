@@ -1,5 +1,5 @@
 import {initMongoose} from "../../lib/mongoose";
-import Product from "../../modes/Product";
+import Product from "../../modelss/Product";
 
 export async function findAllProducts() {
   return Product.find().exec();

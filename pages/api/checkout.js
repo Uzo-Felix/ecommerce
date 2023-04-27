@@ -1,5 +1,5 @@
 import {initMongoose} from "../../lib/mongoose";
-import Product from "../../modes/Product";
+import Product from "../../modelss/Product";
 import Order from "../../modes/Order";
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
